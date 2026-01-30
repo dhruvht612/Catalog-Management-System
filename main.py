@@ -69,6 +69,7 @@ def add_item(items):
     })
 
     print("Item added!")
+    save_items(items)
 
 
 def edit_item(items):
@@ -91,6 +92,7 @@ def edit_item(items):
                 item["description"] = new_desc
 
             print("Item updated!")
+            save_items(items)
             return
 
     print("Item not found.")
@@ -103,7 +105,7 @@ def main():
         print("\n1. View items")
         print("2. Add item")
         print("3. Edit item")
-        print("4. Save and Exit")
+        print("4. Exit")
 
         choice = input("Choose (1-4): ")
 
