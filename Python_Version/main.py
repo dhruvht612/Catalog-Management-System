@@ -1,7 +1,9 @@
 import csv
 import os
+from pathlib import Path
 
-FILE_NAME = "catalog.csv"
+BASE_DIR = Path(__file__).resolve().parent
+FILE_NAME = os.path.join(BASE_DIR, "catalog.csv")
 HEADERS = ["id", "name", "description"]
 
 
