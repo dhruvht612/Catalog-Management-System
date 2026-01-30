@@ -1,3 +1,7 @@
-id,name,description
-1,Item,Asus Laptop
-2,NBA Basketball,the size of ball if only for kids
+id, name               , description
+ 1, Laptop Computer    , "High-performance laptop with 16GB RAM, 512GB SSD, and Intel i7 processor. Perfect for software development and multimedia tasks."
+ 2, Wireless Mouse     , "Ergonomic wireless mouse with 2.4GHz connectivity, 1600 DPI sensor, and long battery life. Compatible with Windows, Mac, and Linux."
+ 3, Mechanical Keyboard, RGB backlit mechanical keyboard with Cherry MX switches. Features programmable keys and durable construction for gaming and typing.
+ 4, USB-C Hub          , "Multi-port USB-C hub with HDMI, USB 3.0, SD card reader, and power delivery. Expands connectivity for modern laptops and tablets."
+ 5, Monitor Stand      , Adjustable monitor stand with cable management. Supports monitors up to 32 inches and improves ergonomics and workspace organization.
+ 6, Laptop             , Asus Gaming laptop
