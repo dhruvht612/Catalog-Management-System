@@ -1,14 +1,3 @@
-// ============================================================================
-// CATALOG MANAGEMENT SYSTEM - JavaScript Logic
-// ============================================================================
-// This file handles:
-// - Frontend: User interactions, DOM manipulation, form handling
-// - Backend Simulation: Data validation, business logic
-// - Database Simulation: Loading from JSON, in-memory data management
-// ============================================================================
-
-// Database Simulation: In-memory storage (simulates database)
-// In a real application, this would be a database server (MySQL, MongoDB, etc.)
 let catalogData = [];
 
 // DOM Elements
@@ -26,31 +15,19 @@ const closeDetailsBtn = document.getElementById('close-details');
 
 let editingItemId = null;
 
-// ============================================================================
-// DATABASE OPERATIONS (Simulated)
-// ============================================================================
-
-/**
- * Load data from JSON file (simulates database query)
- * Frontend: Fetches data from JSON file
- * Backend: Would query actual database (SELECT * FROM items)
- */
 async function loadData() {
     try {
-        // Frontend: Fetch JSON file (simulates API call to backend)
         const response = await fetch('data.json');
         
         if (!response.ok) {
             throw new Error('Failed to load data.json');
         }
         
-        // Backend Simulation: Parse JSON response
         const data = await response.json();
         
-        // Database Simulation: Store in memory (simulates database connection)
+        
         catalogData = data.items || [];
         
-        // Frontend: Update UI with loaded data
         renderList();
         
         console.log('Data loaded successfully:', catalogData.length, 'items');
